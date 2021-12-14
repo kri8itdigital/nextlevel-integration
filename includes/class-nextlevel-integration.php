@@ -255,6 +255,10 @@ class Nextlevel_Integration {
 		$this->loader->add_filter( 'woocommerce_checkout_fields', $plugin_public, 'woocommerce_checkout_fields', 999, 1);
 
 		$this->loader->add_action( 'woocommerce_order_status_completed', $plugin_public, 'woocommerce_order_status_completed', 999, 1);
+		$this->loader->add_action( 'woocommerce_thankyou', $plugin_public, 'woocommerce_thankyou', 999, 1);
+
+
+		$this->loader->add_filter( 'woocommerce_return_to_shop_redirect', $plugin_public, 'woocommerce_return_to_shop_redirect', 999, 1);
 	}
 
 	/**

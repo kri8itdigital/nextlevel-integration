@@ -15,7 +15,7 @@
  * @wordpress-plugin
  * Plugin Name:       NEXTLEVEL Integration
  * Plugin URI:        https://nextlevel.thrifty.co.za
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Description:       Syncs and connects to the NEXTLEVEL hub and CARPRO
  * Version:           1.0.0
  * Author:            Hilton Moore
  * Author URI:        https://www.kri8it.com

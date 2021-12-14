@@ -26,6 +26,7 @@ class NEXTLEVEL{
 
 		$_ARGS = array(
 		    'method' => 'GET',
+		    'timeout' => 600,
 		    'headers' => array(
 		        'Content-Type' => 'application/json',
 		        'Accept' => 'application/json',
@@ -39,8 +40,6 @@ class NEXTLEVEL{
 		endif;
 
 		$_RETURN = wp_remote_post($_URL, $_ARGS);
-
-		//echo '<pre>'; print_r($_RETURN); echo '</pre>';
 
 		$_RESPONSE = json_decode($_RETURN['body'], true);
 

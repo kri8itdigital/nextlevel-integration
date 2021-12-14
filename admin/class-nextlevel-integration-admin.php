@@ -111,7 +111,7 @@ class Nextlevel_Integration_Admin {
 
 	/* HTTP TIMEOUT */
 	public function http_request_timeout(){
-		return 600;
+		return 6000;
 	}
 
 

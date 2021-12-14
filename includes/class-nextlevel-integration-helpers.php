@@ -7,6 +7,11 @@ class NEXTLEVEL_HELPERS{
 
 
 
+
+
+
+
+	/* GET ORDER TOTAL */
 	public static function GET_ORDER_TOTAL($_ORDER){
 
 
@@ -34,7 +39,12 @@ class NEXTLEVEL_HELPERS{
 
 
 
-	// IS VEHICLE AVAILABLE	
+
+
+
+
+
+	/* IS VEHICLE ENABLED - SO THAT WE CAN SHOW IT */
 	public static function IS_AVAILABLE($_CODE){
 
 		$_ARGS = array(
@@ -72,7 +82,12 @@ class NEXTLEVEL_HELPERS{
 
 
 
-	// CREATE ARRAY OF BRANCHES
+
+
+
+
+
+	/* FETCH BRANCHES */
 	public static function BRANCH_SELECT(){
 	
 		$_ARGS = array(
@@ -103,7 +118,12 @@ class NEXTLEVEL_HELPERS{
 
 
 
-	// CREATE ARRAY OF BRANCH TIMES
+
+
+
+
+
+	/* BRANCH TIMES */
 	public static function BRANCH_TIMES_SELECT($_CODE, $_DATE, $_DAY){
 
 		$_BRANCH = self::GET_BRANCH_FROM_CODE($_CODE);
@@ -153,7 +173,12 @@ class NEXTLEVEL_HELPERS{
 
 
 
-	// IS PARTICULAR DATE A PUBLIC HOLIDAY
+
+
+
+
+
+	/* IS PARTICULAR DAY A PUBLIC HOLIDAY */
 	public static function IS_PUBLIC_HOLIDAY($_DATE){
 
 
@@ -178,6 +203,11 @@ class NEXTLEVEL_HELPERS{
 
 
 
+
+
+
+
+	/* GET BRANCH FROM CODE */
 	public static function GET_BRANCH_FROM_CODE($_CODE){
 
 		$_BRANCH = get_posts(
@@ -201,6 +231,11 @@ class NEXTLEVEL_HELPERS{
 
 
 
+
+
+
+
+	/* GET FIRST RATE FOR THRIFTY */
 	public static function VEHICLE_FIRST_RATE($_SKU){
 
 		if(WC()->session->get('carpro_availability')):
@@ -222,6 +257,11 @@ class NEXTLEVEL_HELPERS{
 
 
 
+
+
+
+
+	/* GET VEHICLE INTERNATIONAL CODE */
 	public static function VEHICLE_CODE($_SKU){
 
 		if(WC()->session->get('carpro_availability')):
@@ -244,6 +284,8 @@ class NEXTLEVEL_HELPERS{
 
 
 
+
+	/* BUILD RATE OPTIONS */
 	public static function VEHICLE_RATE_OPTIONS(){
 		global $product;
 
@@ -309,6 +351,10 @@ class NEXTLEVEL_HELPERS{
 
 
 
+
+
+
+	/* CLEAR ALL THE CARPRO STUFF FROM THE SESSION */
 	public static function CLEAR_CARPRO(){
 
 		WC()->session->__unset('carpro_search_start');
@@ -342,6 +388,12 @@ class NEXTLEVEL_HELPERS{
 
 
 
+
+
+
+
+
+	/* CHECK SESSION IF AN EXTRA HAS BEEN SELECTED */
 	public static function ISEXTRASELECTED($_KEY){
 
 		$_SELECTED = 0;

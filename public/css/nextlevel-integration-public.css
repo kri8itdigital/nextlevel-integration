@@ -1,0 +1,34 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+.woocommerce ul.products.columns-4 li.product{ min-width:100% !important; display:block; clear:both; }
+
+#nextlevelLoader{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: all;
+    cursor: wait;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0; 
+    visibility: hidden;
+    transition: .3s all;
+
+}
+
+#nextlevelLoader.SHOWING{
+    opacity: 1; 
+    visibility: visible;
+    z-index: 999;
+    pointer-events: none;
+}
+
+.nextlevelPriceItem{
+    display: none; visibility: hidden; opacity: 0; pointer-events: none;
+}
